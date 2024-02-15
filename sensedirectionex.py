@@ -8,7 +8,7 @@ class Canvas():
     def __init__(self, width, height):
         self._x = width
         self._y = height
-        self._canvas = [ [" " for x in range(self._x)] for y in range(self._y) ]
+        self._canvas = [ [' ' for y in range(self._y)] for x in range(self._x) ]
 
     def setPos(self, pos , mark):
         self._canvas[round(pos[0])][round(pos[1])] = mark
@@ -22,27 +22,30 @@ class Canvas():
     def print(self):
         self.clear()
         for y in range(self._y):
+            #print ([col[y] for col in self._canvas])
             print(' '.join([col[y] for col in self._canvas]))
          
 
-class TerminalScribe(Canvas):
+class TerminalScribe():
     def __init__(self, canvas):
         self.canvas = canvas
-        self.pos = [0,0]
+        
         self.mark = "*"
         self.trail = "."
+        self.pos = [0,0]
         self.direction = [0, 1]
         self.framerate = 0.05
         
     def setdegrees(self, degree):
-        self.direction = [math.sin((degree/180)* math.pi),-math.cos((degree/180)*math.pi)]
-        #print(self.direction)
-
+        radians = (degree/180) * math.pi
+        self.direction = [math.sin(radians), -math.cos(radians)]
+        
+       
     def forward(self):
-        pos = [self.pos[0] + self.direction[0] , self.pos[1] + self.direction[1]]
+        pos = [self.pos[0] + self.direction[0] , self.pos[1] + self.direction[0]]
         if not self.canvas.hitsWall(pos):
             self.draw(pos)
-            # time.sleep(self.framerate)
+            time.sleep(self.framerate)
         
             
     def draw(self,pos):
@@ -50,19 +53,14 @@ class TerminalScribe(Canvas):
         self.pos = pos
         self.canvas.setPos(self.pos , self.mark)
         self.canvas.print()
-        # time.sleep(self.framerate)
+        time.sleep(self.framerate)
 
     
 
     def drawslantline(self,degrees):
-        self.degrees = degrees
-        #print(self.degrees)
-        self.setdegrees(self.degrees)
+        self.setdegrees(degrees)
         for i in range(30):
             self.forward()
-
-    
-            
 
 
     def up(self):
