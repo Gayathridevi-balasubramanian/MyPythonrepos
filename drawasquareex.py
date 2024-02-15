@@ -27,7 +27,7 @@ class TerminalScribe(Canvas):
         self.pos = [0,0]
         self.mark = "*"
         self.trail = "."
-    
+        self.framerate = 0.2
     def up(self):
         #set the position 
         pos = [self.pos[0], self.pos[1]-1]
@@ -54,15 +54,16 @@ class TerminalScribe(Canvas):
         self.pos = pos
         self.canvas.setPos(self.pos , self.mark)
         self.canvas.print()
+        time.sleep(self.framerate)
     def drawsquare(self,side):
         self.side = side
         for i in range(0,self.side):
             self.right()        
         for i  in range(0,self.side):
             self.down()
-        for i in range(0, self.side):
+        for i in range(0,self.side):
             self.left()
-        for i in range(0, self.side):
+        for i in range(0,self.side):
             self.up()
     
 
