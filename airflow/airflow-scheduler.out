@@ -1,0 +1,136 @@
+[[34m2024-03-22 11:51:06,054[0m] {[34mscheduler_job.py:[0m714} INFO[0m - Starting the scheduler[0m
+[[34m2024-03-22 11:51:06,054[0m] {[34mscheduler_job.py:[0m719} INFO[0m - Processing each file at most -1 times[0m
+[[34m2024-03-22 11:51:06,057[0m] {[34mexecutor_loader.py:[0m107} INFO[0m - Loaded executor: SequentialExecutor[0m
+[[34m2024-03-22 11:51:06,066[0m] {[34mmanager.py:[0m163} INFO[0m - Launched DagFileProcessorManager with pid: 9843[0m
+[[34m2024-03-22 11:51:06,071[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 11:51:06,073[0m] {[34msettings.py:[0m58} INFO[0m - Configured default timezone Timezone('UTC')[0m
+[2024-03-22T11:51:06.111+0000] {manager.py:409} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[[34m2024-03-22 11:56:06,436[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 12:01:06,796[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 12:06:06,990[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 12:11:07,151[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 12:16:07,405[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 12:21:07,668[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 12:26:07,837[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 12:31:08,091[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 12:36:08,346[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 12:41:08,545[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 12:46:08,799[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 12:51:09,054[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 12:56:09,175[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 12:58:22,654[0m] {[34mserve_logs.py:[0m60} WARNING[0m - The Authorization header is missing: Host: 127.0.0.1:8793
+Connection: keep-alive
+Sec-Ch-Ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,ta;q=0.6
+Cookie: session=f5604766-7195-4845-b48a-3faba18fd66d.0hnRmmhccE0vTWA08goL_Ilh1aw
+
+.[0m
+[[34m2024-03-22 12:58:22,655[0m] {[34mserve_logs.py:[0m104} WARNING[0m - Unknown error[0m
+Traceback (most recent call last):
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/airflow/utils/serve_logs.py", line 61, in validate_pre_signed_url
+    abort(403)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/flask/helpers.py", line 310, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/werkzeug/exceptions.py", line 864, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.Forbidden: 403 Forbidden: You don't have the permission to access the requested resource. It is either read-protected or not readable by the server.[0m
+[[34m2024-03-22 12:58:22,780[0m] {[34mserve_logs.py:[0m60} WARNING[0m - The Authorization header is missing: Host: 127.0.0.1:8793
+Connection: keep-alive
+Sec-Ch-Ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://127.0.0.1:8793/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,ta;q=0.6
+Cookie: session=f5604766-7195-4845-b48a-3faba18fd66d.0hnRmmhccE0vTWA08goL_Ilh1aw
+
+.[0m
+[[34m2024-03-22 12:58:22,781[0m] {[34mserve_logs.py:[0m104} WARNING[0m - Unknown error[0m
+Traceback (most recent call last):
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/airflow/utils/serve_logs.py", line 61, in validate_pre_signed_url
+    abort(403)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/flask/helpers.py", line 310, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/werkzeug/exceptions.py", line 864, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.Forbidden: 403 Forbidden: You don't have the permission to access the requested resource. It is either read-protected or not readable by the server.[0m
+[[34m2024-03-22 12:58:27,583[0m] {[34mserve_logs.py:[0m60} WARNING[0m - The Authorization header is missing: Host: 127.0.0.1:8793
+Connection: keep-alive
+Cache-Control: max-age=0
+Sec-Ch-Ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Sec-Ch-Ua-Mobile: ?0
+Sec-Ch-Ua-Platform: "Windows"
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,ta;q=0.6
+Cookie: session=f5604766-7195-4845-b48a-3faba18fd66d.0hnRmmhccE0vTWA08goL_Ilh1aw
+
+.[0m
+[[34m2024-03-22 12:58:27,583[0m] {[34mserve_logs.py:[0m104} WARNING[0m - Unknown error[0m
+Traceback (most recent call last):
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/airflow/utils/serve_logs.py", line 61, in validate_pre_signed_url
+    abort(403)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/flask/helpers.py", line 310, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/werkzeug/exceptions.py", line 864, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.Forbidden: 403 Forbidden: You don't have the permission to access the requested resource. It is either read-protected or not readable by the server.[0m
+[[34m2024-03-22 12:58:27,655[0m] {[34mserve_logs.py:[0m60} WARNING[0m - The Authorization header is missing: Host: 127.0.0.1:8793
+Connection: keep-alive
+Sec-Ch-Ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+Sec-Ch-Ua-Platform: "Windows"
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://127.0.0.1:8793/
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-IN,en-GB;q=0.9,en-US;q=0.8,en;q=0.7,ta;q=0.6
+Cookie: session=f5604766-7195-4845-b48a-3faba18fd66d.0hnRmmhccE0vTWA08goL_Ilh1aw
+
+.[0m
+[[34m2024-03-22 12:58:27,655[0m] {[34mserve_logs.py:[0m104} WARNING[0m - Unknown error[0m
+Traceback (most recent call last):
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/airflow/utils/serve_logs.py", line 61, in validate_pre_signed_url
+    abort(403)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/flask/helpers.py", line 310, in abort
+    current_app.aborter(code, *args, **kwargs)
+  File "/usr/local/python/3.10.13/lib/python3.10/site-packages/werkzeug/exceptions.py", line 864, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.Forbidden: 403 Forbidden: You don't have the permission to access the requested resource. It is either read-protected or not readable by the server.[0m
+[[34m2024-03-22 13:01:09,410[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 13:06:09,482[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 13:11:09,736[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 13:16:09,993[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 13:21:10,250[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 13:26:10,408[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 13:31:10,635[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 13:36:10,778[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 13:41:11,033[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 13:46:11,269[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 13:51:11,524[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 13:56:11,781[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2024-03-22 14:01:11,852[0m] {[34mscheduler_job.py:[0m1408} INFO[0m - Resetting orphaned tasks for active dag runs[0m
